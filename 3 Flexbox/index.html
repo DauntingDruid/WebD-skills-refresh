@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Flexbox overview</title>
+    <style>
+
+    .flexBox-container {
+        display: flex;
+        height: 95vh;
+        /* height: 95vh;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        align-items: center; */
+        /* flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        height: 95vh; */
+        /* flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center; */
+    }
+
+
+    .flexBox-item{
+        
+        background-color: coral;
+        border: 3px solid black;
+        padding: 20px;
+        margin: 10px;
+        color: white;
+        flex-basis: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item-1 { 
+        min-height: 50px;
+        flex: 1 1 15%;
+        align-self: center;
+        order: 2; 
+        /* order 2 is used soo it is in middle of the page */
+        /* flex-grow: 1;
+        shrink is used to make it responsive, as width is set to 15% ^ see above after reaching theshold they get same size. soo we use shrink soo it maintains the size ratio
+        flex-shrink: 1;  */
+       }
+    
+    .item-2 { 
+        min-height: 100px;
+        flex: 1 1 25%;
+        align-self: flex-end;
+        /* flex-grow: 4;
+        flex-shrink: 1; */
+        order: 1;
+       }
+    
+    .item-3 { 
+        min-height: 250px;
+        flex: 5 5 25%;
+        align-self: flex-start;
+        /* flex-grow: 1;
+        flex-shrink: 1; */
+        order: 3;
+      }
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="flexBox-container">
+        <div class="flexBox-item item-1">Main content</div>
+        <div class="flexBox-item item-2">Left Aside</div>
+        <div class="flexBox-item item-3">Right Aside</div>
+    </div>
+    
+</body>
+</html>
