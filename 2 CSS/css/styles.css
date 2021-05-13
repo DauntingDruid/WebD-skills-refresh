@@ -1,0 +1,127 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.6em;
+    margin: 0; /*since browser has some default margin we use this to cover the full length of the page */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#mainHeader {
+    background: #333;
+    color: peachpuff;
+}
+
+#mainNav {
+    background: #ccc;
+    color: black;
+    top: 0px;
+    position: sticky;
+}
+
+#mainNav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#mainNav li{
+    display: inline;
+    padding: 5px 10px;
+}
+
+#mainNav a { 
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#mainNav li:hover {
+    background: #aaa;
+}
+
+
+#jumbo {
+    background-image: url("../images/bg.jpg");
+    background-position: center center;
+    min-height: 300px;
+    text-align: center;
+    letter-spacing: 1.5em;
+    word-spacing: 1.3em;
+}
+
+
+#jumbo h1 {
+    color: white;
+    font-size: 40px;
+    padding-top: 20px;
+    line-height: 1.6em;
+}
+
+#main {
+    float: right;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+#sideBar {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    border-right: 2px solid black;
+    box-sizing: border-box;
+}
+
+#mainFooter {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.clearFix {
+    clear: both;
+
+}
+
+.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    background-color: burlywood;
+}
+
+.absolute {
+    position: absolute;
+    color: coral;
+    background-color: cornsilk;
+}
+
+/* p {
+    border-top: 5px solid blue;
+    border-right: 3px dotted green;
+    border-bottom: 2px dotted yellow;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20;
+    padding: 10px 20px 10px 20px;
+    padding: 10px 20px;
+    padding: 20px;
+    margin: 50px;
+    
+} */
+
+@media (max-width: 800px){
+    #main, #sidebar {
+        width: 100%;
+        float: none;
+        border: none;
+    }
+}
